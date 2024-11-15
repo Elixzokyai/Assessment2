@@ -5,7 +5,7 @@ class Contact(models.Model):
     name = models.CharField(max_length=50)  # Maximum length of 50 characters
     email = models.EmailField()
     phone = models.CharField(
-        max_length=25,  # Maximum length for phone numbers
+        max_length=15,  # Maximum length for phone numbers
         validators=[RegexValidator(r'^\+?\d{10,15}$', message="Enter a valid phone number.")]
     )  # Allows numeric characters and an optional '+' for international numbers
     message = models.TextField(
