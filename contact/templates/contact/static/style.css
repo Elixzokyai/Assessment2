@@ -1,0 +1,15 @@
+.AllContacts{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+             'cd cd cd cd cd cd cd cd cd'
+             'nd nd nd nd nd nd nd nd';
+
+}
+
+#navbar{
+    grid-area: cd;
+}
+#some1{
+    grid-area: nd;
+}
